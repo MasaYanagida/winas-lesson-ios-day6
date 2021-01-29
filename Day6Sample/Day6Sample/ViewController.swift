@@ -16,6 +16,16 @@ class ViewController: UIViewController {
         for _ in 0 ..< 20 {
             contents.append(Content.create())
         }
+                
+        /*if let content = contents[safe: 20] {
+            let controller = UIAlertController.init(title: "選択したセル", message: content.description, preferredStyle: .alert)
+            controller.addAction(UIAlertAction.init(title: "OK", style: .cancel, handler: nil))
+            present(controller, animated: true, completion: nil)
+        } else {
+            let controller = UIAlertController.init(title: "選択したセル", message: "NULL!!", preferredStyle: .alert)
+            controller.addAction(UIAlertAction.init(title: "OK", style: .cancel, handler: nil))
+            present(controller, animated: true, completion: nil)
+        }*/
     }
     
     @IBOutlet private dynamic weak var button: UIButton!
@@ -27,9 +37,9 @@ class ViewController: UIViewController {
         }
     }
     @IBAction private func buttonTouchUpInside(_ sender: UIButton) {
-        let controller = SampleHeaderViewController.fromStoryboard()
+        //let controller = SampleHeaderViewController.fromStoryboard()
         //let controller = SampleScrollViewController.fromStoryboard()
-        //let controller = SampleCollectionViewController.fromStoryboard()
+        let controller = SampleCollectionViewController.fromStoryboard()
         navigationController?.pushViewController(controller, animated: true)
     }
 }

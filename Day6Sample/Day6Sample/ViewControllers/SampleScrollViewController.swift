@@ -22,7 +22,8 @@ class SampleScrollViewController: UIViewController {
         """.styled(with: StringStyle(
             .font(.boldSystemFont(ofSize: 20)), .color(.black), .lineSpacing(8)
         ))
-        view.layoutIfNeeded()
+        /// view.setNeedsLayout() // == force update layout
+        view.layoutIfNeeded() // == update layout if needed
     }
     
     @IBOutlet private dynamic weak var label: UILabel!

@@ -33,6 +33,7 @@
 		3355257125B7C50D00FC410F /* SampleHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3355257025B7C50D00FC410F /* SampleHeaderViewController.swift */; };
 		3355257425B7C77000FC410F /* SampleHeaderViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3355257325B7C77000FC410F /* SampleHeaderViewController.storyboard */; };
 		3355257725B7CF2200FC410F /* Array+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3355257625B7CF2200FC410F /* Array+Util.swift */; };
+		337273CF25BACD7200641D87 /* AppHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337273CE25BACD7200641D87 /* AppHelper.swift */; };
 		8DA4D0A4BFA791079AA44F0E /* Pods_Day6Sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2EDFB2F262E03EAC1F2363F /* Pods_Day6Sample.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +68,7 @@
 		3355257025B7C50D00FC410F /* SampleHeaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleHeaderViewController.swift; sourceTree = "<group>"; };
 		3355257325B7C77000FC410F /* SampleHeaderViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SampleHeaderViewController.storyboard; sourceTree = "<group>"; };
 		3355257625B7CF2200FC410F /* Array+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Util.swift"; sourceTree = "<group>"; };
+		337273CE25BACD7200641D87 /* AppHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppHelper.swift; sourceTree = "<group>"; };
 		D2EDFB2F262E03EAC1F2363F /* Pods_Day6Sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Day6Sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -93,6 +95,7 @@
 		333FFCBD25B93B0D00361D53 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				337273CE25BACD7200641D87 /* AppHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 				3355252825B7B79B00FC410F /* StoryboardInstantiable.swift in Sources */,
 				3355256B25B7BCCD00FC410F /* UIImageView+Util.swift in Sources */,
 				3355250725B7B64800FC410F /* SceneDelegate.swift in Sources */,
+				337273CF25BACD7200641D87 /* AppHelper.swift in Sources */,
 				333FFCB025B9360200361D53 /* SampleScrollViewController.swift in Sources */,
 				3355256E25B7C35700FC410F /* NSNotification+Util.swift in Sources */,
 				333FFCC925B93E6C00361D53 /* Content2CollectionViewCell.swift in Sources */,

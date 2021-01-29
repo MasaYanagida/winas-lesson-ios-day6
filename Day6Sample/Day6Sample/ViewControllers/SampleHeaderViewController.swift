@@ -16,6 +16,9 @@ class SampleHeaderViewController: UIViewController {
         let header = SampleHeader.createFromNib()
         header.delegate = self
         header.content = Content.create()
+//        header.closure = { [weak self] in
+//            self?.view.backgroundColor = .black
+//        }
         view.addSubview(header)
         header.snp.makeConstraints { make in
             make.top.equalTo(0)

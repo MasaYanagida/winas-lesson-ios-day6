@@ -20,8 +20,22 @@ class Content2CollectionViewCell: UICollectionViewCell {
     }
     
     class func sizeForItem(content: Content2, width: CGFloat) -> CGSize {
-        // TODO
-        return .zero
+        let cacheKey: NSString = "Content2CollectionViewCell:\(content.id)" as NSString
+        if let size = Static.cache.object(forKey: cacheKey) as? CGSize {
+            return size
+        }
+        let cell = Static.cell
+        cell.dummy = content
+        cell.frame.size = CGSize(width: width, height: 0)
+        cell.setNeedsLayout()
+        var size = cell.systemLayoutSizeFitting(
+            CGSize(width: width, height: 0),
+            withHorizontalFittingPriority: .required,
+            verticalFittingPriority: .defaultLow
+        )
+        size.width = width
+        Static.cache.setObject(NSValue(cgSize: size), forKey: cacheKey)
+        return size
     }
     
     var dummy: Content2? {
